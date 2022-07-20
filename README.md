@@ -1,4 +1,4 @@
 # "Node.js and express"
 
-How to bild a web server.
+How to build a web server.
 Added user registration.
