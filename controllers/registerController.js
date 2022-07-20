@@ -18,7 +18,7 @@ const handleNewUser = async (req, res) => {
 
   // Check for duplicate usernames in the DB
   const duplicate = usersDB.users.find((person) => person.username === user);
-  if (duplicate) return res.sendSatus(409); // conflict
+  if (duplicate) return res.sendStatus(409); // conflict
   try {
     // Encrypt password
     const hashedPwd = await bcrypt.hash(pwd, 10);
